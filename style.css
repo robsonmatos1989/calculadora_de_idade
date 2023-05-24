@@ -1,0 +1,11 @@
+.insert{
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 50px;
+}
+.container{
+	border: black solid;
+	height: 200px;
+	width: 800px;
+	text-align: center;
+}
