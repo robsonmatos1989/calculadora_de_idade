@@ -5,19 +5,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Calculadora</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		
+		function calc(){
+			diaN = document.getElementById("dia");
+			mesN = document.getElementById("mes");
+			anoN = document.getElementById("ano");
+			document.getElementById("resultado").innerHTML = "Dia: " +diaN.value + " <br> Mês: " +mesN.value + " <br> Ano: " +anoN.value;
+		}
+
+	</script>
+
 </head>
 
-<body>
-Robson Matos Souza
-	<div class="container">
-		<form>
-			<input class="insert"type="" name="">Dia
-			<input class="insert"type="" name="">Mês
-			<input class="insert"type="" name="">Ano
-			<input type="submit" name="" value="calcular">
-		</form>
-	</div>
+<body >
 
+	<div class="container" >
+		<h2>Informe o dia, mês e ano de seu nascimento</h2>
+		<form>
+			Dia<input class="insert"type="text" id="dia" value="">
+			Mês<input class="insert"type="text" id="mes" value="">
+			Ano<input class="insert"type="text" id="ano" value="">
+			<input type="button" value="calcular" align="center" onclick="calc();">
+		</form>
+		<div name="Exibir as informações finais">
+			
+			<p id="resultado"></p>
+		</div>	
+	</div>
+	
 </body>
 
 
