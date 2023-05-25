@@ -8,11 +8,24 @@
 	<script type="text/javascript">
 		
 		function calc(){
-			diaN = document.getElementById("dia");
-			mesN = document.getElementById("mes");
-			anoN = document.getElementById("ano");
-			document.getElementById("resultado").innerHTML = "Dia: " +diaN.value + " <br> Mês: " +mesN.value + " <br> Ano: " +anoN.value;
-		}
+
+			dia = parseInt(document.getElementById("dia").value);
+			mes = parseInt(document.getElementById("mes").value);
+			ano = parseInt(document.getElementById("ano").value);
+			x = new Date();			
+			anoAtual = x.getFullYear();
+			idade = anoAtual - ano;
+			
+
+			
+			document.getElementById("resultado").innerHTML = "Sua Idade:" +idade + " anos";
+
+			}
+		
+		
+
+
+   	
 
 	</script>
 
@@ -22,15 +35,16 @@
 
 	<div class="container" >
 		<h2>Informe o dia, mês e ano de seu nascimento</h2>
-		<form>
-			Dia<input class="insert"type="text" id="dia" value="">
-			Mês<input class="insert"type="text" id="mes" value="">
-			Ano<input class="insert"type="text" id="ano" value="">
-			<input type="button" value="calcular" align="center" onclick="calc();">
-		</form>
+			<form>
+				Dia<input class="insert"type="number" id="dia" min="1" max="31">
+				Mês<input class="insert"type="number" id="mes" min="1" max="12">
+				Ano<input class="insert"type="number" id="ano" min="1900" max="2023">
+				<!--Ano<input class="insert" id="ano" >-->
+				<input type="button" value="calcular" align="center" onclick="calc();">	
+			</form>
 		<div name="Exibir as informações finais">
 			
-			<p id="resultado"></p>
+			<h2><p id="resultado"></p></h2>
 		</div>	
 	</div>
 	
