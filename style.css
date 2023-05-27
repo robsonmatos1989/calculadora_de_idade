@@ -7,15 +7,16 @@
 	font-weight: bold;
 }
 .container{
-	border: black ;
+	border: black solid;
 	border-radius: 15%;
 	height: 250px;
 	width: 800px;
 	text-align: center;	
 	margin-left: 30%;
 	margin-top: 15%;
-	background-color: #51966C;
+	background-color: #FF8C00;
 	padding-top: 10px;
+	text-decoration: bold;
 	/*background-image: url("images/fundo.jpg");*/
 }
 
@@ -25,11 +26,27 @@ p{
 }
 body{
 	background-color: #D9D4BA ;
-	/*background-image: url("images/fundo.jpg");
-	<a href="https://br.freepik.com/vetores-gratis/fundo-de-aquarela-de-tinta-a-alcool_21727350.htm#query=neon%20azul&position=16&from_view=search&track=ais">Imagem de coolvector</a> no Freepik*/
+	background-image: url("images/fundo.jpg");
+
+	font-family: Impact, fantasy;
+	
 }
 #calcular{
 	background-color: lightyellow;
 	border-radius: 50%;
 	height: 50px;
+	font-family: Impact, fantasy;
+
+}
+.containerBottom{
+	display: inline-block;
+	background-color: black;
+	/*height: 60px;*/
+	border-radius: 55%;
+	width: 10%;
+}
+a{
+	text-decoration: none;
+	color: darkgoldenrod;
+
 }
