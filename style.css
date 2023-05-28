@@ -9,15 +9,16 @@
 .container{
 	border: black solid;
 	border-radius: 15%;
-	height: 250px;
-	width: 800px;
+	height: 260px;
+	width: 800px;	
 	text-align: center;	
 	margin-left: 30%;
-	margin-top: 15%;
+	margin-top: 15%;	
 	background-color: #FF8C00;
 	padding-top: 10px;
 	text-decoration: bold;
-	/*background-image: url("images/fundo.jpg");*/
+	justify-content: centers;	
+	
 }
 
 
@@ -40,13 +41,20 @@ body{
 }
 .containerBottom{
 	display: inline-block;
-	background-color: black;
-	/*height: 60px;*/
+	background-color: black;	
 	border-radius: 55%;
 	width: 10%;
 }
 a{
 	text-decoration: none;
 	color: darkgoldenrod;
+
+}
+@media screen and (max-width: 800px){
+	.container{
+		width: 60%;
+		height: 80%;
+
+	}
 
 }
